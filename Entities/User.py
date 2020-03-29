@@ -2,7 +2,7 @@ import datetime
 
 
 class User:
-    def __init__(self, userId, username, fullname, password, comment, status, createdBy, createdAt, lastUpdatedBy, lastUpdatedAt):
+    def __init__(self, userId, username, fullname, password, comment, status, createdBy, createdAt=datetime.datetime.now(), lastUpdatedBy=None, lastUpdatedAt=datetime.datetime.now()):
         self.__UserId = userId
         self.__UserName = username
         self.__FullName = fullname
@@ -11,20 +11,11 @@ class User:
         self.__CreatedBy = createdBy
         self.__CreatedAt = createdAt
         self.__Status = status
-        self.__LastUpdatedBy = lastUpdatedBy
+        if lastUpdatedBy is None:
+            self.__LastUpdatedBy = createdBy
+        else:
+            self.__LastUpdatedBy = lastUpdatedBy
         self.__LastUpdatedAt = lastUpdatedAt
-
-    def __init__(self, userId, username, fullname, password, comment, status, createdBy):
-        self.__UserId = userId
-        self.__UserName = username
-        self.__FullName = fullname
-        self.__Password = password
-        self.__Comment = comment
-        self.__CreatedBy = createdBy
-        self.__CreatedAt = datetime.datetime.now()
-        self.__Status = status
-        self.__LastUpdatedBy = createdBy
-        self.__LastUpdatedAt = datetime.datetime.now()
 
     @property
     def UserId(self):
