@@ -1,4 +1,11 @@
 import datetime
+from enum import Enum
+
+
+class UserState(Enum):
+    OPEN = 1
+    CLOSED = 2
+    ONHOLD = 3
 
 
 class User:
@@ -48,6 +55,10 @@ class User:
     @property
     def Status(self):
         return self.__Status
+
+    @Status.setter
+    def Status(self, status):
+        self.__Status = status
 
     @property
     def LastUpdatedBy(self):
