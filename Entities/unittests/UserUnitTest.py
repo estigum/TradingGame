@@ -38,7 +38,7 @@ class TestUser(unittest.TestCase):
 
     def test_closeduser(self):
         testdate = datetime.datetime.now()
-        user = User(1,'estigum','Erik Stigum','Test123', 'This is a test Account', UserState.OPEN,'system', testdate, 'estigum', testdate)
+        user = User(1, 'estigum', 'Erik Stigum', 'Test123', 'This is a test Account', UserState.OPEN, 'system', testdate, 'estigum', testdate)
         user.Status = UserState.CLOSED
         self.assertEqual(user.Status, UserState.CLOSED)
 
