@@ -29,6 +29,21 @@ class TestUserManagement(unittest.TestCase):
         user = um.Get('estigum')
         self.assertNotEqual(user, None)
 
+    def test_userexist(self):
+        um = UserManagement()
+        um.Add('estigum', 'Erik Stigum', 'test123', 'This is my account', 'usermanagment')
+        retval = False
+        if 'estigum' in um:
+            retval = True
+        self.assertEqual(retval, True)
+
+    def test_usernotexist(self):
+        um = UserManagement()
+        retval = False
+        if 'estigum' in um:
+            retval = True
+        self.assertEqual(retval, False)
+
     def test_getusernotexist(self):
         um = UserManagement()
         um.Add('estigum', 'Erik Stigum', 'test123', 'This is my account', 'usermanagment')

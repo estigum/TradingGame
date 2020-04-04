@@ -40,3 +40,8 @@ class UserManagement:
         if status == UserState.CLOSED:
             del self.__Users[username]
 
+    def __contains__(self, username):
+
+        if username in self.__Users:
+            return True
+        return False
