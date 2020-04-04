@@ -39,3 +39,4 @@ class UserManagement:
         user.LasMUpdatedAt = updateTime
         if status == UserState.CLOSED:
             del self.__Users[username]
+

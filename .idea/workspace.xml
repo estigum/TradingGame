@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c5cd2b12-273e-4383-a793-791ca997bd4a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Services/UserManagement.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Services/unittests/UserManagementUnitTest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Entities/unittests/UserUnitTest.py" beforeDir="false" afterPath="$PROJECT_DIR$/Entities/unittests/UserUnitTest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/UserManagement.py" beforeDir="false" afterPath="$PROJECT_DIR$/Services/UserManagement.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/unittests/UserManagementUnitTest.py" beforeDir="false" afterPath="$PROJECT_DIR$/Services/unittests/UserManagementUnitTest.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,8 +25,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Entities/User.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="358">
-              <caret line="63" column="8" lean-forward="true" selection-start-line="63" selection-start-column="8" selection-end-line="63" selection-end-column="21" />
+            <state relative-caret-position="391">
+              <caret line="24" column="19" lean-forward="true" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="19" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
@@ -40,7 +38,7 @@
         <entry file="file://$PROJECT_DIR$/Entities/unittests/UserUnitTest.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="409">
-              <caret line="47" lean-forward="true" selection-start-line="45" selection-end-line="47" />
+              <caret line="47" selection-start-line="45" selection-end-line="47" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
@@ -51,8 +49,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Services/UserManagement.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="33" column="63" selection-start-line="33" selection-start-column="29" selection-end-line="33" selection-end-column="63" />
+            <state relative-caret-position="187">
+              <caret line="20" column="48" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="48" />
               <folding>
                 <element signature="e#0#30#0" expanded="true" />
               </folding>
@@ -64,7 +62,10 @@
         <entry file="file://$PROJECT_DIR$/Services/unittests/UserManagementUnitTest.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="17">
-              <caret line="1" selection-start-line="1" selection-end-line="1" />
+              <caret line="9" column="8" lean-forward="true" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
+              <folding>
+                <element signature="e#0#15#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -72,7 +73,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/unittest/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="147">
+            <state relative-caret-position="1309">
               <caret line="82" selection-start-line="82" selection-end-line="82" />
             </state>
           </provider>
@@ -81,7 +82,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/BankClasses.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="650">
+            <state relative-caret-position="1309">
               <caret line="77" column="13" selection-start-line="77" selection-start-column="13" selection-end-line="77" selection-end-column="13" />
             </state>
           </provider>
@@ -121,6 +122,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -144,11 +146,16 @@
               <item name="CryptoGame" type="462c0819:PsiDirectoryNode" />
               <item name="Services" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="CryptoGame" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CryptoGame" type="462c0819:PsiDirectoryNode" />
+              <item name="Services" type="462c0819:PsiDirectoryNode" />
+              <item name="unittests" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -297,17 +304,10 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/BankClasses.py">
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/typeshed/stdlib/3/unittest/__init__.pyi">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="650">
-          <caret line="77" column="13" selection-start-line="77" selection-start-column="13" selection-end-line="77" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/unittest/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="82" selection-start-line="82" selection-end-line="82" />
+        <state relative-caret-position="155">
+          <caret line="316" column="4" selection-start-line="316" selection-start-column="4" selection-end-line="316" selection-end-column="4" />
         </state>
       </provider>
     </entry>
@@ -318,37 +318,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Entities/User.py">
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/unittest/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="358">
-          <caret line="63" column="8" lean-forward="true" selection-start-line="63" selection-start-column="8" selection-end-line="63" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="1309">
+          <caret line="82" selection-start-line="82" selection-end-line="82" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BankClasses.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1309">
+          <caret line="77" column="13" selection-start-line="77" selection-start-column="13" selection-end-line="77" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Entities/unittests/UserUnitTest.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="409">
-          <caret line="47" lean-forward="true" selection-start-line="45" selection-end-line="47" />
+          <caret line="47" selection-start-line="45" selection-end-line="47" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/typeshed/stdlib/3/unittest/__init__.pyi">
+    <entry file="file://$PROJECT_DIR$/Entities/User.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="316" column="4" selection-start-line="316" selection-start-column="4" selection-end-line="316" selection-end-column="4" />
+        <state relative-caret-position="391">
+          <caret line="24" column="19" lean-forward="true" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Services/UserManagement.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="33" column="63" selection-start-line="33" selection-start-column="29" selection-end-line="33" selection-end-column="63" />
+        <state relative-caret-position="187">
+          <caret line="20" column="48" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="48" />
           <folding>
             <element signature="e#0#30#0" expanded="true" />
           </folding>
@@ -358,7 +365,10 @@
     <entry file="file://$PROJECT_DIR$/Services/unittests/UserManagementUnitTest.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
+          <caret line="9" column="8" lean-forward="true" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

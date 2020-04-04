@@ -15,6 +15,14 @@ class TestUserManagement(unittest.TestCase):
         self.assertEqual(user.Comment, 'This is my account')
         self.assertEqual(user.Status, UserState.OPEN)
 
+    def test_tryaddsameuseragian(self):
+        um = UserManagement()
+        um.Add('estigum', 'Erik Stigum', 'test123', 'This is my account', 'usermanagment')
+        try:
+            um.Add('estigum', 'Erik Stigum', 'test123', 'This is my account', 'usermanagment')
+        except Exception as e:
+            self.assertEqual(e.args[0], "User already exists")
+
     def test_getuserexist(self):
         um = UserManagement()
         um.Add('estigum', 'Erik Stigum', 'test123', 'This is my account', 'usermanagment')
