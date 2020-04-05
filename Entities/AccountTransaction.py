@@ -1,20 +1,24 @@
 from datetime import datetime
-from enum import Enum
+
+class AccountTransactionType:
+    DEPOSIT = 1
+    WITHDRAWAL = 2
+    INTEREST = 3
+    MARGINCALL = 4
 
 
-class AccountState(Enum):
-    OPEN = 1
-    CLOSED = 2
-    ONHOLD = 3
+class AccountTransactionStatus:
+    PENDING = 1
+    COMPLETE = 2
+    CANCELLED = 3
 
 
-class Account:
-    def __init__(self, accountId, userId, ccy, amount, status, createdBy, createdAt=datetime.now(), lastUpdatedBy=None,
+class AccountTransaction:
+    def __init__(self, accountId, amount, type, status, createdBy, createdAt=datetime.now(), lastUpdatedBy=None,
                  lastUpdatedAt=datetime.now()):
-        self.__UserId = userId
         self.__AccountId = accountId
-        self.__Ccy = ccy
         self.__Amount = amount
+        self.__Type = type
         self.__Status = status
         self.__CreatedBy = createdBy
         self.__CreatedAt = createdAt
@@ -25,16 +29,8 @@ class Account:
         self.__LastUpdatedAt = lastUpdatedAt
 
     @property
-    def UserId(self):
-        return self.__UserId
-
-    @property
     def AccountId(self):
         return self.__AccountId
-
-    @property
-    def Ccy(self):
-        return self.__Ccy
 
     @property
     def Amount(self):
@@ -43,6 +39,14 @@ class Account:
     @Amount.setter
     def Amount(self, amount):
         self.__Amount = amount
+
+    @property
+    def Type(self):
+        return self.__Type
+
+    @Type.setter
+    def Type(self, type):
+        self.__Type = type
 
     @property
     def Status(self):

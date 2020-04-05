@@ -9,7 +9,8 @@ class UserState(Enum):
 
 
 class User:
-    def __init__(self, userId, username, fullname, password, comment, status, createdBy, createdAt=datetime.datetime.now(), lastUpdatedBy=None, lastUpdatedAt=datetime.datetime.now()):
+    def __init__(self, userId, username, fullname, password, comment, status, createdBy,
+                 createdAt=datetime.datetime.now(), lastUpdatedBy=None, lastUpdatedAt=datetime.datetime.now()):
         self.__UserId = userId
         self.__UserName = username
         self.__FullName = fullname
