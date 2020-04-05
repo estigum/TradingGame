@@ -33,10 +33,9 @@ class UserManagement:
         if user is None:
             raise Exception("User does not exist.  Can't modify")
 
-        updateTime = datetime.now()
         user.Status = status
         user.LastUpdatedBy = lastUpdatedBy
-        user.LasMUpdatedAt = updateTime
+        user.LasMUpdatedAt = datetime.now()
         if status == UserState.CLOSED:
             del self.__Users[username]
 
