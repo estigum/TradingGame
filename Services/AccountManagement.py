@@ -29,6 +29,13 @@ class AccountManagement:
 
         return None
 
+    def GetByUserCcy(self, userId, ccy):
+        if userId in self.___UserAccounts:
+            userAccounts = self.___UserAccounts[userId]
+            if ccy in userAccounts:
+                return userAccounts[ccy]
+        return None
+
     def UserAccountByCcyExist(self, userId, ccy):
         if userId in self.___UserAccounts:
             userAccounts = self.___UserAccounts[userId]
@@ -132,4 +139,8 @@ class AccountManagement:
         self.AddTransaction(ccyAccount.AccountId, amount, AccountTransactionType.MARGINCALL,
                             AccountTransactionStatus.COMPLETE, lastUpdatedBy)
 
+    def __contains__(self, accountId):
 
+        if accountId in self.__Accounts:
+            return True
+        return False
