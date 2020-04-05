@@ -2,7 +2,7 @@ from datetime import datetime
 from enum import Enum
 
 
-class AcountState(Enum):
+class AccountState(Enum):
     OPEN = 1
     CLOSED = 2
     ONHOLD = 3
