@@ -14,8 +14,10 @@ class AccountTransactionStatus:
 
 
 class AccountTransaction:
-    def __init__(self, accountId, amount, type, status, createdBy, createdAt=datetime.now(), lastUpdatedBy=None,
+    def __init__(self, transId, accountId, amount, type, status, createdBy, createdAt=datetime.now(), lastUpdatedBy=None,
                  lastUpdatedAt=datetime.now()):
+
+        self.__TransId = transId
         self.__AccountId = accountId
         self.__Amount = amount
         self.__Type = type
@@ -27,6 +29,10 @@ class AccountTransaction:
         else:
             self.__LastUpdatedBy = lastUpdatedBy
         self.__LastUpdatedAt = lastUpdatedAt
+
+    @property
+    def TransId(self):
+        return self.__TransId
 
     @property
     def AccountId(self):

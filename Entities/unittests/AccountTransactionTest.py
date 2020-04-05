@@ -10,7 +10,9 @@ class AccountTransactionTest(unittest.TestCase):
     def test_addAccountTransaction(self):
 
         created = datetime.now()
-        at = AccountTransaction(1, 5000, AccountTransactionType.DEPOSIT, AccountTransactionStatus.COMPLETE, "bank", created)
+        at = AccountTransaction(5, 1, 5000, AccountTransactionType.DEPOSIT, AccountTransactionStatus.COMPLETE, "bank", created)
+
+        self.assertEqual(at.TransId, 5)
         self.assertEqual(at.AccountId, 1)
         self.assertEqual(at.Amount, 5000)
         self.assertEqual(at.Type, AccountTransactionType.DEPOSIT)
